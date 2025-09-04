@@ -1,10 +1,44 @@
+# -------------------------
 # Python-generated files
+# -------------------------
 __pycache__/
-*.py[oc]
+*.py[oc]              # Compiled python files (.pyc, .pyo, .pyd)
+*$py.class
 build/
 dist/
 wheels/
-*.egg-info
+uv.lock/
+*.egg-info/
+mlp_model.keras/      # Your saved Keras model
 
+# -------------------------
 # Virtual environments
-.venv
+# -------------------------
+.venv/
+venv/
+ENV/
+
+# -------------------------
+# Logs and databases
+# -------------------------
+*.log
+*.sqlite3
+*.db
+
+# -------------------------
+# Jupyter Notebook checkpoints
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# OS-specific files
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Environment & secrets
+# -------------------------
+.env
+.env.local
+.env.*
